@@ -6,8 +6,8 @@ Welcome to my React and Node tutorial to build a fully-functional e-commerce web
 
 ## Demo Website
 
-- 👉 Heroku : [https://react-amazona.herokuapp.com](https://react-amazona.herokuapp.com)
-- 👉 Heroku Mirror: [https://react-amazona-mirror.herokuapp.com](https://react-amazona-mirror.herokuapp.com)
+- 👉 Heroku : [https://amazon-valley.herokuapp.com/](https://amazon-valley.herokuapp.com/)
+
 
 
 ## Run Locally
