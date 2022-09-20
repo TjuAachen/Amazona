@@ -2,20 +2,20 @@ import http from 'http';
 import { Server } from 'socket.io';
 import express from 'express';
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+//import dotenv from 'dotenv';
 import path from 'path';
 import productRouter from './routers/productRouter.js';
 import userRouter from './routers/userRouter.js';
 import orderRouter from './routers/orderRouter.js';
 import uploadRouter from './routers/uploadRouter.js';
-
-dotenv.config();
-
+import seedRouter from './routers/seedRouter.js';
+const MONGODB_URI='mongodb+srv://aachen:zzw15122910279@cluster0.yxueodh.mongodb.net/Amazona?retryWrites=true&w=majority';
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/amazona');
+mongoose.connect(MONGODB_URI);
+app.use('/api/seed', seedRouter);
 app.use('/api/uploads', uploadRouter);
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
