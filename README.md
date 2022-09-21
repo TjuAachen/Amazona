@@ -2,7 +2,7 @@
 ![amazona](/template/images/amazona.jpg)
 
 # Introduction
-This website is a fully-functional e-commerce website exactly like amazon. It is developed based on the classic MERN stack (MongoDB, ExpressJS, React and Node.JS).
+Amazona is a fully-functional e-commerce website exactly like amazon. And it is developed based on the classic MERN stack (MongoDB, ExpressJS, React and Node.JS).
 
 ## Demo Website
 
